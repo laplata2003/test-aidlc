@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "distribution": "claude",
+  "productName": "Claude Code",
+  "configNextStep": "open Claude Code in this project and run `/aidlc --doctor`",
+  "name": "claude",
+  "harnessDir": ".claude",
+  "rulesSubdir": "rules",
+  "providers": {
+    "schemaVersion": 1,
+    "provider": "current"
+  },
+  "runtime": {
+    "schemaVersion": 1,
+    "baselinePath": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Users/gaston/.local/bin:/opt/homebrew/bin",
+    "aidlcPath": "/Users/gaston/.local/bin/aidlc",
+    "cliPath": "/opt/homebrew/bin/claude"
+  }
+}
