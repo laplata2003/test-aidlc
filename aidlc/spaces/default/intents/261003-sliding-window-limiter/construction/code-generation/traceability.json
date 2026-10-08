@@ -1,0 +1,416 @@
+{
+  "stage": "code-generation",
+  "upstream_ids": [
+    "FR1",
+    "FR1.1",
+    "FR1.2",
+    "FR2",
+    "FR2.1",
+    "FR2.2",
+    "FR2.3",
+    "FR3",
+    "FR3.1",
+    "FR3.2",
+    "FR3.3",
+    "FR3.4",
+    "FR4",
+    "FR4.1",
+    "FR4.2",
+    "FR5",
+    "FR5.1",
+    "FR5.2",
+    "FR5.3",
+    "FR5.4",
+    "FR5.5",
+    "NFR1",
+    "NFR2",
+    "NFR3",
+    "NFR4",
+    "AC1.1.1",
+    "AC1.1.2",
+    "AC1.1.3",
+    "AC1.1.4",
+    "AC1.1.5",
+    "AC1.2.1",
+    "AC1.2.2",
+    "AC1.2.3",
+    "AC1.2.4",
+    "AC1.2.5",
+    "AC1.3.1",
+    "AC1.3.2",
+    "AC1.3.3",
+    "AC1.3.4",
+    "AC1.3.5",
+    "AC1.3.6",
+    "AC1.4.1",
+    "AC1.4.2",
+    "AC1.4.3",
+    "AC1.4.4",
+    "AC1.4.5",
+    "AC1.4.6",
+    "AC1.5.1",
+    "AC1.5.2",
+    "AC1.5.3",
+    "AC1.5.4",
+    "AC1.6.1",
+    "AC1.6.2",
+    "AC1.6.3",
+    "AC1.6.4",
+    "AC1.6.5",
+    "AC1.7.1",
+    "AC1.7.2",
+    "AC1.7.3",
+    "AC2.1.1",
+    "AC2.1.2",
+    "AC2.1.3",
+    "AC2.2.1",
+    "AC2.2.2",
+    "AC2.2.3",
+    "AC2.2.4",
+    "AC2.2.5",
+    "AC2.2.6"
+  ],
+  "coverage": [
+    {
+      "id": "FR1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR1.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR1.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR2.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR2.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR2.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR3.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR3.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR3.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR3.4",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR4",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR4.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR4.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR5",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR5.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR5.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR5.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR5.4",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "FR5.5",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "NFR1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "NFR2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "NFR3",
+      "status": "OK",
+      "target": "tests/test_limiter.py"
+    },
+    {
+      "id": "NFR4",
+      "status": "OK",
+      "target": "pyproject.toml"
+    },
+    {
+      "id": "AC1.1.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.1.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.1.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.1.4",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.1.5",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.2.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.2.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.2.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.2.4",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.2.5",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.3.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.3.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.3.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.3.4",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.3.5",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.3.6",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.4.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.4.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.4.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.4.4",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.4.5",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.4.6",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.5.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.5.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.5.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.5.4",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.6.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.6.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.6.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.6.4",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.6.5",
+      "status": "OK",
+      "target": "pyproject.toml"
+    },
+    {
+      "id": "AC1.7.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.7.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC1.7.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC2.1.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC2.1.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC2.1.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC2.2.1",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC2.2.2",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC2.2.3",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC2.2.4",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC2.2.5",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    },
+    {
+      "id": "AC2.2.6",
+      "status": "OK",
+      "target": "src/sliding_window_limiter/limiter.py"
+    }
+  ],
+  "reverse": []
+}

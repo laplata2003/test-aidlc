@@ -1,0 +1,12 @@
+{
+  "stage": "code-generation",
+  "version": 1,
+  "writes": [
+    { "path": "pyproject.toml" },
+    { "path": "README.md" },
+    { "path": "src/sliding_window_limiter/__init__.py" },
+    { "path": "src/sliding_window_limiter/limiter.py" },
+    { "path": "tests/conftest.py" },
+    { "path": "tests/test_limiter.py" }
+  ]
+}

@@ -83,4 +83,14 @@ aidlc/diagnostics/
 # which was proven to corrupt the multi-line audit blocks) ·
 # aidlc/spaces/*/intents/*/<phase>/<stage>/*.md (artifacts + diary).
 .claude/settings.local.json
+
+# Python 
+__pycache__/
+*.pyc
+
 # END AI-DLC:gitignore
+
+# Python project artifacts (added for sliding-window-limiter)
+.pytest_cache/
+*.egg-info/
+.venv/
