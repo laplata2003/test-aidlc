@@ -22,9 +22,9 @@ if result.allowed:
 else:
     print(f"retry in {result.retry_after:.3f}s")
 
-limiter.reset("client-1")        # forget one client
-limiter.cleanup()                # drop clients idle for more than 2 windows
-limiter.start_background_cleanup(60)   # optional daemon thread, every 60 s
+limiter.reset("client-1")  # forget one client
+limiter.cleanup()  # drop clients idle for more than 2 windows
+limiter.start_background_cleanup(60)  # optional daemon thread, every 60 s
 limiter.stop_background_cleanup()
 ```
 

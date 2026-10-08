@@ -19,10 +19,10 @@ import logging
 import math
 import threading
 import time
+from collections.abc import Callable
 from dataclasses import dataclass
-from typing import Callable, Dict, Optional
 
-__all__ = ["SlidingWindowLimiter", "CheckResult", "KeyState"]
+__all__ = ["CheckResult", "KeyState", "SlidingWindowLimiter"]
 
 logger = logging.getLogger(__name__)
 
@@ -63,7 +63,7 @@ class KeyState:
 class _Entry:
     """Mutable per-key record (fixed size)."""
 
-    __slots__ = ("window", "current", "previous", "last_activity")
+    __slots__ = ("current", "last_activity", "previous", "window")
 
     def __init__(
         self, window: int, current: int, previous: int, last_activity: float
@@ -105,7 +105,7 @@ class SlidingWindowLimiter:
         self,
         limit: int,
         window_seconds: float,
-        clock: Optional[Callable[[], float]] = None,
+        clock: Callable[[], float] | None = None,
     ) -> None:
         _validate_positive("limit", limit)
         _validate_positive("window_seconds", window_seconds)
@@ -114,11 +114,11 @@ class SlidingWindowLimiter:
         self._clock: Callable[[], float] = (
             clock if clock is not None else _default_clock
         )
-        self._entries: Dict[str, _Entry] = {}
+        self._entries: dict[str, _Entry] = {}
         self._lock = threading.Lock()
         self._bg_lock = threading.Lock()
-        self._bg_thread: Optional[threading.Thread] = None
-        self._bg_stop: Optional[threading.Event] = None
+        self._bg_thread: threading.Thread | None = None
+        self._bg_stop: threading.Event | None = None
 
     # ------------------------------------------------------------------ math
 
@@ -134,7 +134,7 @@ class SlidingWindowLimiter:
             return current * (1.0 - frac)
         return 0.0
 
-    def _effective_entry(self, entry: Optional[_Entry], x: float) -> float:
+    def _effective_entry(self, entry: _Entry | None, x: float) -> float:
         if entry is None:
             return 0.0
         return self._effective(entry.window, entry.current, entry.previous, x)
@@ -229,7 +229,7 @@ class SlidingWindowLimiter:
         with self._lock:
             return len(self._entries)
 
-    def key_state(self, key: str) -> Optional[KeyState]:
+    def key_state(self, key: str) -> KeyState | None:
         """Return a read-only snapshot of ``key``'s stored record, or ``None``."""
         with self._lock:
             e = self._entries.get(key)
@@ -278,5 +278,6 @@ class SlidingWindowLimiter:
         while not stop.wait(interval):
             try:
                 self.cleanup()
-            except Exception:  # noqa: BLE001 - keep the loop alive, never silent
+            except Exception:
+                # Keep the loop alive; log the failure so it is never silent.
                 logger.exception("background cleanup failed; will retry")

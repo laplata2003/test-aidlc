@@ -2,4 +2,4 @@
 
 from .limiter import CheckResult, KeyState, SlidingWindowLimiter
 
-__all__ = ["SlidingWindowLimiter", "CheckResult", "KeyState"]
+__all__ = ["CheckResult", "KeyState", "SlidingWindowLimiter"]
